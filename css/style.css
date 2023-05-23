@@ -8,6 +8,10 @@
     color: #000;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     font-size: 10px;
 }
@@ -20,6 +24,11 @@
     width: 100%;
     height: 100px;
     border-bottom: 1px solid #000;
+    position: sticky;
+    position: -webkit-sticky;
+    /* Safari */
+    top: 0;
+    z-index: 999;
 }
 
 .header-block {
@@ -139,7 +148,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-bottom: 163px;
+    padding-bottom: 5%;
 }
 
 .services {
@@ -162,6 +171,7 @@
     font-size: 2.0rem;
     line-height: 2.4rem;
     width: 50%;
+    margin-left: 1%;
 }
 
 .services-list li {
@@ -179,14 +189,242 @@
 
 /* project block */
 
-.project-block {}
+.project-block {
+    width: 100%;
+    height: 70vw;
+    min-height: 70vw;
+    background-color: #000;
+    -webkit-clip-path: polygon(0% 100%, 0% 25%, 100% 1%, 100% 72%);
+    clip-path: polygon(0% 100%, 0% 25%, 100% 1%, 100% 72%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-block_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.project-block_image {
+    height: auto;
+    margin: 1%;
+}
+
+.project-block_text {
+    width: 40%;
+}
+
+.project-block_title {
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 4.4rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 7%;
+    text-align: left;
+}
+
+.project-block_desc {
+    font-weight: 400;
+    font-size: 2.0rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    margin-bottom: 10%;
+}
+
+.project-block_link {
+    font-weight: 700;
+    font-size: 2.0rem;
+    line-height: 2.4rem;
+    color: #FF0000;
+    text-decoration: none;
+}
+
+.project-block_link:hover,
+.project-block_link:focus,
+.project-block_link:active {
+    border-bottom: 2px #FF0000 solid;
+}
 
 
 /* contacts */
 
-.contacts {}
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.contacts-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacts-info {}
+
+.contacts-info_title {
+    font-weight: 700;
+    font-size: 4.0rem;
+    line-height: 4.8rem;
+    margin-bottom: 10%;
+}
+
+.contacts-info_desc {
+    font-weight: 400;
+    font-size: 2.0rem;
+    line-height: 2.4rem;
+}
+
+.contacts-info_desc p {
+    margin-bottom: 5%;
+}
+
+.phone a,
+.fax a,
+.tel a,
+.email a {
+    text-decoration: none;
+}
+
+.phone a:hover,
+.fax a:hover,
+.tel a:hover,
+.email a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.phone-next {
+    padding-left: 17.5%;
+}
+
+.fax {
+    margin-bottom: 5%;
+}
+
+.tel {
+    margin-bottom: 5%;
+}
+
+.tel-next {
+    padding-left: 3.5%;
+}
+
+.email {
+    margin-bottom: 5%;
+}
+
+.email-next {
+    padding-left: 12%;
+}
+
+.contacts-map {
+    width: 50%;
+    height: 25vw;
+}
 
 
 /* footer */
 
-.footer-block {}
+.footer-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 25vw;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.footer-block-top {
+    content: "";
+    width: 100%;
+    height: 12vw;
+    background-image: url('../img/bottom-transition.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -30%;
+    left: 0;
+}
+
+.footer-information {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5vw;
+}
+
+.footer-info {}
+
+.footer-info_org-name {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.4rem;
+    color: #FFFFFF;
+    margin-bottom: 10%;
+}
+
+.footer-email,
+.footer-email a,
+.footer-info2_text,
+.footer-phone,
+.footer-phone a,
+.footer-tel,
+.footer-tel a,
+.footer-copyright,
+.footer-confid,
+.footer-menu-list_link {
+    font-weight: 400;
+    font-size: 2.0rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-bottom: 5%;
+}
+
+.footer-email a:hover,
+.footer-phone a:hover,
+.footer-tel a:hover,
+.footer-confid:hover,
+.footer-menu-list_link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.footer-phone {}
+
+.footer-tel {}
+
+.footer-menu {
+    height: 100%;
+}
+
+.footer-menu-list {
+    list-style: none;
+    text-align: center;
+}
+
+.footer-menu-list li {
+    margin-bottom: 10%;
+}
+
+.footer-menu-list_link {}
+
+.footer-info2 {
+    width: 25%;
+}
+
+.footer-copyright {}
+
+.footer-confid {}
