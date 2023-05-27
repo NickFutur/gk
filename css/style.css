@@ -109,7 +109,7 @@ html {
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-image: url('../img/electrical-networks-font-orig.png');
+    background-image: url('../img/electrical-networks-font.png');
     background-repeat: no-repeat;
     background-size: cover;
 }

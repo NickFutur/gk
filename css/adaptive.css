@@ -39,6 +39,9 @@
     .services-icon_image {
         width: 100%;
     }
+    .services-icon {
+        width: 70%;
+    }
     .project-block_content {
         flex-direction: row-reverse;
     }
