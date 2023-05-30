@@ -223,11 +223,33 @@
         width: 100%;
         text-align: center;
     }
+    /* Second page */
+    .title-text-second-page {
+        font-size: 3.0rem;
+        line-height: 3.5rem;
+    }
+    .title-desc-second-page {
+        font-size: 2.2rem;
+        line-height: 2.9rem;
+    }
+    .project-photos {
+        flex-wrap: wrap;
+    }
+    .project-photos img {
+        width: 32.97vw;
+        margin-bottom: 2%;
+    }
+    .project-title-block img {
+        width: 60.18vw;
+    }
 }
 
 @media only screen and (max-width: 480px) {
      :root {
         font-size: 7px;
+    }
+    .header {
+        height: 70px;
     }
     .name-block::after {
         bottom: 59%;
@@ -244,6 +266,34 @@
     }
     .contacts-map {
         height: 50vw;
+    }
+    /* Second page */
+    .title-block-second-page {
+        height: 15.61vw;
+    }
+    .wrapper-two {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    /* Second page */
+    .title-block-second-page {
+        height: 18.61vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    /* Second page */
+    .title-block-second-page {
+        height: 21.61vw;
+    }
+}
+
+@media only screen and (max-width: 270px) {
+    /* Second page */
+    .title-block-second-page {
+        height: 35.61vw;
     }
 }
 

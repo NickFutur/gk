@@ -20,6 +20,7 @@ const hamburger = document.querySelector(".mobile-navigation")
 const closeBtn = document.querySelector(".close-btn")
 const menu_items = document.querySelectorAll('.mob-text-link');
 
+
 hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 })
