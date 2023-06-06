@@ -1,4 +1,4 @@
-/* Стили для второй страницы */
+/* Стили для других страниц */
 
 .wrapper-two {
     display: flex;
@@ -69,4 +69,30 @@
 .project-photos img {
     border-radius: 28px;
     width: 17.19vw;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.reviews-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.reviews-block a {
+    margin: 2%;
+    border: 1px #000 solid;
+    border-radius: 28px;
+    overflow: hidden;
+}
+
+.reviews-block a img:hover {
+    transform: scale(1.1);
+    transition: 1s;
 }
