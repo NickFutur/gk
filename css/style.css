@@ -17,6 +17,142 @@ html {
 }
 
 
+/* preloader */
+
+.preloader-body {
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 900;
+    text-align: center;
+}
+
+.preloader {
+    position: relative;
+    top: 50%;
+    margin: auto;
+    width: 36vw;
+    color: white;
+    font-size: 3.0rem;
+    background: linear-gradient(180deg, #413080 0, #afa7cc 100%);
+    box-shadow: inset 0 5px 2.0rem #311e77;
+    text-shadow: 5px 5px 5px rgba(49, 30, 119, 0.3);
+    z-index: 999;
+}
+
+.preloader:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+span {
+    float: left;
+    height: 5vw;
+    line-height: 6vw;
+    width: 3vw;
+}
+
+.preloader>span {
+    border-left: 1px solid #afa7cc;
+    border-right: 1px solid #413080;
+}
+
+.bars {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.bars span {
+    background: linear-gradient(180deg, white 0, #b0a8cd 100%);
+    animation: up 3s infinite;
+}
+
+.loaded {
+    display: none;
+}
+
+@keyframes up {
+    0% {
+        margin-bottom: 0;
+    }
+    16% {
+        margin-bottom: 100%;
+        height: 1.0vw;
+    }
+    50% {
+        margin-bottom: 0;
+    }
+    100% {
+        margin-bottom: 0;
+    }
+}
+
+.bars span:nth-child(2) {
+    animation-delay: .142857s;
+}
+
+.bars span:nth-child(3) {
+    animation-delay: .285714s;
+}
+
+.bars span:nth-child(4) {
+    animation-delay: .428571s;
+}
+
+.bars span:nth-child(5) {
+    animation-delay: .571428s;
+}
+
+.bars span:nth-child(6) {
+    animation-delay: .714285s;
+}
+
+.bars span:nth-child(7) {
+    animation-delay: .857142s;
+}
+
+.bars span:nth-child(8) {
+    animation-delay: .999999s;
+}
+
+.bars span:nth-child(9) {
+    animation-delay: 1.142856s;
+}
+
+.bars span:nth-child(10) {
+    animation-delay: 1.285713s;
+}
+
+.bars span:nth-child(11) {
+    animation-delay: 1.428570s;
+}
+
+.bars span:nth-child(12) {
+    animation-delay: 1.571427s;
+}
+
+@media only screen and (max-width: 1024px) {
+    .preloader {
+        font-size: 2.0rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .preloader {
+        font-size: 1.5rem;
+    }
+}
+
+
 /* header */
 
 .header {
@@ -24,8 +160,8 @@ html {
     width: 100%;
     height: 100px;
     border-bottom: 1px solid #000;
-    position: sticky;
-    position: -webkit-sticky;
+    /* position: sticky;
+    position: -webkit-sticky; */
     /* Safari */
     top: 0;
     z-index: 999;
@@ -59,6 +195,13 @@ html {
     height: 100%;
     align-items: center;
     padding: 1% 0 1% 0;
+}
+
+.navigation-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
 }
 
 .mobile-navigation,

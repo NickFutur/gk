@@ -1,3 +1,9 @@
+const preloader = document.querySelector(".preloader-body");
+window.onload = function() {
+    preloader.classList.add('loaded');
+
+}
+
 const anchors = document.querySelectorAll('a[href*="#"]')
 
 for (let anchor of anchors) {
@@ -23,7 +29,7 @@ const menu_items = document.querySelectorAll('.mob-text-link');
 
 hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
-    s // document.body.style.position = "fixed";
+    // document.body.style.position = "fixed";
 })
 
 closeBtn.addEventListener("click", () => {
