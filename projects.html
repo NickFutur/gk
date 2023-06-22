@@ -13,6 +13,47 @@
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div class="preloader-body">
+        <div class="preloader">
+            <span>Э</span>
+            <span>Н</span>
+            <span>Е</span>
+            <span>Р</span>
+            <span>Г</span>
+            <span>О</span>
+            <span>-</span>
+            <span>С</span>
+            <span>Т</span>
+            <span>Р</span>
+            <span>О</span>
+            <span>Й</span>
+
+            <div class="bars">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <script>
+        const preloader = document.querySelector(".preloader-body");
+        window.onload = function() {
+            setTimeout(function() {
+                preloader.classList.add('loaded');
+                document.body.classList.add('body-active');
+            }, 1500);
+        }
+    </script>
     <header class="header">
         <section class="header-block">
             <div class="logo">

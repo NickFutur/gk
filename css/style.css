@@ -19,6 +19,14 @@ html {
 
 /* preloader */
 
+body {
+    position: fixed;
+}
+
+.body-active {
+    position: relative;
+}
+
 .preloader-body {
     box-sizing: border-box;
     position: fixed;
@@ -160,11 +168,40 @@ span {
     width: 100%;
     height: 100px;
     border-bottom: 1px solid #000;
-    /* position: sticky;
-    position: -webkit-sticky; */
     /* Safari */
     top: 0;
     z-index: 999;
+}
+
+.header-sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #000;
+    /* Safari */
+    top: 0;
+    z-index: 999;
+    opacity: 0;
+    /*Элемент полностью прозрачный (невидимый)*/
+    transition: 1s;
+    /*Скорость перехода состояния элемента*/
+    animation: show 2s 1;
+    /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards;
+    /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 0s;
+    /* Задержка перед началом */
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .header-block {

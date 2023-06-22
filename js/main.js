@@ -1,13 +1,6 @@
-const preloader = document.querySelector(".preloader-body");
-window.onload = function() {
-    preloader.classList.add('loaded');
-
-}
-
 const anchors = document.querySelectorAll('a[href*="#"]')
 
 for (let anchor of anchors) {
-
     anchor.addEventListener('click', function(e) {
         e.preventDefault()
 
@@ -19,6 +12,29 @@ for (let anchor of anchors) {
         })
     })
 }
+
+
+const header = document.querySelector('.header');
+const first = document.querySelector('.header-block');
+const headerHeight = header.offsetHeight;
+const firstHeight = first.offsetHeight;
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', () => {
+    let scrollDistance = window.scrollY;
+    if (scrollDistance > lastScrollTop) {
+        header.classList.remove('header-sticky');
+    } else {
+        header.classList.add('header-sticky');
+    }
+
+    if (scrollDistance === 0) {
+        header.classList.remove('header-sticky');
+    }
+
+    lastScrollTop = scrollDistance;
+});
+
 
 
 const navMenu = document.querySelector(".mob-menu");

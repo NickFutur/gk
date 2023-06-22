@@ -44,7 +44,15 @@
             </div>
         </div>
     </div>
-
+    <script>
+        const preloader = document.querySelector(".preloader-body");
+        window.onload = function() {
+            setTimeout(function() {
+                preloader.classList.add('loaded');
+                document.body.classList.add('body-active');
+            }, 1500);
+        }
+    </script>
     <!-- Preloader -->
     <header class="header">
         <section class="header-block">
