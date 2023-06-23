@@ -19,9 +19,10 @@ html {
 
 /* preloader */
 
-body {
+
+/* body {
     position: fixed;
-}
+} */
 
 .body-active {
     position: relative;
@@ -156,7 +157,13 @@ span {
 
 @media only screen and (max-width: 480px) {
     .preloader {
-        font-size: 1.5rem;
+        width: 72vw;
+        font-size: 2.0rem;
+    }
+    span {
+        height: 8vw;
+        line-height: 9vw;
+        width: 6vw;
     }
 }
 
@@ -187,7 +194,7 @@ span {
     /*Элемент полностью прозрачный (невидимый)*/
     transition: 1s;
     /*Скорость перехода состояния элемента*/
-    animation: show 2s 1;
+    animation: show 1s 1;
     /* Указываем название анимации, её время и количество повторов*/
     animation-fill-mode: forwards;
     /* Чтобы элемент оставался в конечном состоянии анимации */
