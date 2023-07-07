@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/stylepage.css">
     <link rel="stylesheet" href="css/adaptive.css" type="text/css">
+    <link rel="stylesheet" href="css/lightbox.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 
@@ -147,9 +148,15 @@
                         <li class="project-text">Устройство контура заземления</li>
                     </ul>
                     <div class="project-photos">
-                        <img src="img/project-photo-6.png" alt="Фото проекта 1">
-                        <img src="img/project-photo-7.png" alt="Фото проекта 2">
-                        <img src="img/project-photo-8.png" alt="Фото проекта 3">
+                        <a href="img/project-photo-6.png" data-lightbox="gallery1">
+                            <img src="img/project-photo-6.png" alt="Фото проекта 1">
+                        </a>
+                        <a href="img/project-photo-7.png" data-lightbox="gallery1">
+                            <img src="img/project-photo-7.png" alt="Фото проекта 2">
+                        </a>
+                        <a href="img/project-photo-8.png" data-lightbox="gallery1">
+                            <img src="img/project-photo-8.png" alt="Фото проекта 3">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -158,7 +165,7 @@
         <section class="project-section">
             <div class="wrapper-two">
                 <div class="project-title-block">
-                    <h2 class="project-title">Другие проекты:</h2>
+                    <!-- <h2 class="project-title">Другие проекты:</h2> -->
                 </div>
                 <div class="project-description-block">
 
@@ -200,7 +207,9 @@
             </div>
         </div>
     </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/lightbox.js"></script>
 </body>
 
 </html>
