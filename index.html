@@ -49,7 +49,6 @@
         window.onload = function() {
             setTimeout(function() {
                 preloader.classList.add('loaded');
-                // document.body.classList.add('body-active');
             }, 1500);
         }
     </script>
@@ -114,15 +113,12 @@
         <section class="title-block" id="title-block">
             <div class="title-block-fone">
             </div>
-
             <div class="title-block__company">
                 <h1 class="title-block__company-name">ЭНЕРГО-СТРОЙ</h1>
             </div>
-
             <div class="title-block__desc-block">
                 <h2>Строительство сложных промышленных объектов</h2>
             </div>
-
             <a href="#services">
                 <div class="title-block__rows">
                     <div class="title-block__rows-1">
@@ -160,7 +156,9 @@
         <section class="project-block" id="projects">
             <div class="wrapper">
                 <div class="project-block_content">
-                    <img src="img/our-projects-orig.png" alt="Нащи проекты" class="project-block_image">
+                    <div class="services-icon-image">
+                        <img src="img/our-projects-orig.png" alt="Нащи проекты" class="project-block_image">
+                    </div>
                     <div class="project-block_text">
                         <h3 class="project-block_title">НАШИ РЕАЛИЗОВАННЫЕ РАБОТЫ</h3>
                         <p class="project-block_desc">Основной профиль нашей компании - строительство сложных промышленных объектов. Наши специалисты имеют значительный опыт в проектировании, строительстве, техническом перевооружении, модернизации объектов электрических сетей, а также
@@ -206,7 +204,6 @@
 
 
     </main>
-    <div class="footer-block-top"></div>
     <footer class="footer-block">
 
         <div class="wrapper">

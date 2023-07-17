@@ -105,7 +105,7 @@
         width: 100%;
         height: 100%;
         z-index: 9999;
-        background-color: #fff;
+        background-color: #020913;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -131,7 +131,7 @@
         display: block;
         height: 5px;
         width: 40px;
-        background-color: #000;
+        background-color: #fff;
         transform: rotate(48deg);
     }
     .mob-close-line::after {
@@ -139,11 +139,11 @@
         display: block;
         height: 5px;
         width: 40px;
-        background-color: #000;
+        background-color: #fff;
         transform: rotate(88deg);
     }
     .mob-text-link {
-        color: #000;
+        color: #fff;
         text-decoration: none;
         font-family: 'Inter';
         font-style: normal;
@@ -154,7 +154,7 @@
     .mob-text-link:hover,
     .mob-text-link:focus,
     .mob-text-link:active {
-        border-bottom: 2px #000 solid;
+        border-bottom: 2px #fff solid;
     }
     .headline {
         margin-top: 20px;

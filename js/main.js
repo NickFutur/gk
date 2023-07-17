@@ -45,17 +45,14 @@ const menu_items = document.querySelectorAll('.mob-text-link');
 
 hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
-    // document.body.style.position = "fixed";
 })
 
 closeBtn.addEventListener("click", () => {
-    // document.body.style.position = "relative";
     navMenu.classList.toggle("active");
 })
 
 menu_items.forEach(item => {
     item.addEventListener('click', function() {
         navMenu.classList.toggle("active");
-        // document.body.style.position = "relative";
     })
 })
