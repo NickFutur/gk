@@ -19,10 +19,9 @@ html {
 
 /* preloader */
 
-
-/* body {
-    position: fixed;
-} */
+body {
+    background-color: #0C0C0C;
+}
 
 .body-active {
     position: relative;
@@ -292,22 +291,330 @@ span {
 
 .title-block {
     width: 100%;
-    height: 50vh;
-    text-align: center;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    background-image: url('../img/electrical-networks-font.png');
+    background-image: url('../img/electrical-networks-font-newest.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .title-block-fone {
-    position: relative;
+    width: 70%;
+    height: 100vh;
+    background-color: #020913;
+    clip-path: polygon(0 0, 99% 0, 75% 135%, 0% 100%);
+}
+
+.title-block__company {
+    position: absolute;
+    height: 50%;
+    left: 32.5%;
+    /* left: calc( (100vw - 1440px)/(1920 - 1440) * (92 - 30) + 30%); */
+    top: 40%;
+}
+
+.title-block__company:before {
+    content: "ЭНЕРГО-СТРОЙ";
+    /* color: rgba(0, 255, 255, 0.5); */
+    position: absolute;
+    font-family: 'Noto Serif', serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12rem;
+    line-height: 15rem;
+    left: 25%;
+    top: -30%;
     width: 100%;
-    height: 35vw;
-    background-image: url('../img/top-transition.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    opacity: 0.900000011920929;
+    mix-blend-mode: overlay;
+    color: rgba(255, 255, 255, 0.50);
+    /* background: linear-gradient(100deg, #141414 53%, #00ffff6e 1%, #00ffff6e); */
+    /* color: rgba(0, 255, 255, 0.5); */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+}
+
+.title-block__company:after {
+    content: "ЭНЕРГО-СТРОЙ";
+    position: absolute;
+    font-family: 'Noto Serif', serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12rem;
+    line-height: 15rem;
+    left: -25%;
+    top: 30%;
+    opacity: 0.900000011920929;
+    mix-blend-mode: overlay;
+    color: rgba(255, 255, 255, 0.50);
+    /* background: linear-gradient(100deg, #141414 75.5%, #00f7ffbd 1%, #00f7ffbd); */
+    /* color: rgba(39, 185, 185, 0.3); */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+}
+
+.title-block__company-name {
+    font-family: 'Noto Serif', serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12rem;
+    line-height: 15rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.title-block__desc-block {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 10vh;
+    background-color: #fff;
+    left: 0;
+    top: 62%;
+    clip-path: polygon(0 0, 97% 0, 85% 630%, 0% 100%);
+}
+
+.title-block__desc-block h2 {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 3.9rem;
+    text-transform: lowercase;
+    margin-left: 3%;
+}
+
+.title-block__rows {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 100px;
+    left: 50%;
+    bottom: 5%;
+}
+
+.title-block__rows a {
+    width: 100%;
+    height: 100%;
+}
+
+.title-block__row-1 {
+    position: relative;
+    width: 70px;
+    height: 5px;
+    background-color: #fff;
+    transform: translateX(26px) rotate(-37deg);
+}
+
+.title-block__row-2 {
+    position: relative;
+    top: -5px;
+    width: 70px;
+    height: 5px;
+    background-color: #fff;
+    transform: translateX(-26px) rotate(37deg);
+}
+
+.title-block__row-3 {
+    position: relative;
+    width: 70px;
+    height: 5px;
+    background-color: #fff;
+    transform: translateX(27px) rotate(-37deg);
+}
+
+.title-block__row-4 {
+    position: relative;
+    top: -5px;
+    width: 70px;
+    height: 5px;
+    background-color: #fff;
+    transform: translateX(-27px) rotate(37deg);
+}
+
+.title-block__rows-1 {
+    position: relative;
+    top: -10px;
+}
+
+.title-block__rows-2 {
+    position: relative;
+    top: 20px;
+}
+
+.title-block__rows-1 {
+    animation: row-1 3s linear infinite -1.5s;
+}
+
+@keyframes row-1 {
+    0% {
+        opacity: 0;
+        transform: translate(0, -23px);
+    }
+    10%,
+    90% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, 23px);
+    }
+}
+
+.title-block__rows-2 {
+    animation: row-2 3s linear infinite -1.5s;
+    animation-delay: 1s;
+}
+
+@keyframes row-2 {
+    0% {
+        opacity: 0;
+        transform: translate(0, -23px);
+    }
+    10%,
+    90% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, 23px);
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .title-block__company {
+        left: 29%;
+        top: 40%;
+    }
+    .title-block__company:before {
+        font-size: 10rem;
+        line-height: 12rem;
+    }
+    .title-block__company:after {
+        font-size: 10rem;
+        line-height: 12rem;
+    }
+    .title-block__company-name {
+        font-size: 10rem;
+        line-height: 12rem;
+    }
+    .title-block__desc-block h2 {
+        margin-right: 4%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .title-block__company {
+        left: 29.5%;
+    }
+    .title-block__company:before {
+        font-size: 7rem;
+        line-height: 10rem;
+    }
+    .title-block__company:after {
+        font-size: 7rem;
+        line-height: 10rem;
+    }
+    .title-block__company-name {
+        font-size: 7rem;
+        line-height: 10rem;
+        text-align: center;
+    }
+    .title-block__desc-block h2 {
+        font-size: 2.5rem;
+        line-height: 2.9rem;
+    }
+    .title-block__desc-block {
+        height: 7vh;
+        top: 60%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .title-block-fone,
+    .title-block__company:before,
+    .title-block__company:after {
+        display: none;
+    }
+    .title-block__company {
+        position: relative;
+        left: 0;
+        height: 10%;
+        top: 30%;
+    }
+    .title-block {
+        justify-content: center;
+    }
+    .title-block__desc-block {
+        width: 70%;
+        height: 10vh;
+        top: 65%;
+    }
+    .title-block__rows {
+        width: 120px;
+        height: 100px;
+        left: 45%;
+        bottom: -5%;
+    }
+    .title-block__row-1 {
+        width: 50px;
+        transform: translateX(19px) rotate(-37deg);
+    }
+    .title-block__row-2 {
+        width: 50px;
+        transform: translateX(-19px) rotate(37deg);
+    }
+    .title-block__row-3 {
+        width: 50px;
+        transform: translateX(19px) rotate(-37deg);
+    }
+    .title-block__row-4 {
+        width: 50px;
+        transform: translateX(-19px) rotate(37deg);
+    }
+    .title-block {
+        background-position: center center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .title-block__rows {
+        left: 39%;
+    }
+    .title-block__desc-block h2 {
+        text-align: center;
+        margin-left: 0;
+    }
+    .title-block__company-name {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .title-block__desc-block {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 270px) {
+    .title-block__rows {
+        left: 30%;
+    }
 }
 
 .title-wrap {
@@ -363,6 +670,7 @@ span {
     line-height: 4.8rem;
     margin-top: 80px;
     margin-bottom: 42px;
+    color: #fff;
 }
 
 .services-list {
@@ -371,10 +679,12 @@ span {
     line-height: 2.4rem;
     width: 50%;
     margin-left: 1%;
+    color: #fff;
 }
 
 .services-list li {
     margin-bottom: 3%;
+    color: #fff;
 }
 
 .services-icon {
@@ -385,6 +695,17 @@ span {
     justify-content: center;
     border-radius: 20px;
     overflow: hidden;
+    /* box-shadow: 0px 0px 30px #113F81; */
+}
+
+.services-icon-image {
+    /* -moz-box-shadow: 0 0 20px #113F81;
+    -webkit-box-shadow: 0 0 20px #113F81;
+    box-shadow: 0px 0px 50px #113F81;
+    border-radius: 10%; */
+    filter: drop-shadow(0 0 20px #113F81);
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 

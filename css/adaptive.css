@@ -2,9 +2,9 @@
      :root {
         font-size: 12px;
     }
-    .title-block-fone {
+    /* .title-block-fone {
         height: 55vw;
-    }
+    } */
 }
 
 @media only screen and (max-width: 1500px) {
@@ -252,9 +252,9 @@
     .name-block::after {
         bottom: 59%;
     }
-    .title-block {
+    /* .title-block {
         height: 30vh;
-    }
+    } */
     .services-block {
         padding-bottom: 0;
     }
