@@ -33,6 +33,14 @@
     .project-block {
         height: 85vw;
     }
+    .title-text {
+        font-size: 7rem;
+        line-height: 10rem;
+    }
+    .name-block h3 {
+        font-size: 2.2rem;
+        line-height: 2.9rem;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -222,6 +230,12 @@
         text-align: center;
     }
     /* Second page */
+    .title-block-second-page {
+        height: 35vw;
+    }
+    .title-text {
+        font-size: 6rem;
+    }
     .title-text-second-page {
         font-size: 3.0rem;
         line-height: 3.5rem;
@@ -266,33 +280,44 @@
         height: 50vw;
     }
     /* Second page */
-    .title-block-second-page {
-        height: 15.61vw;
-    }
     .wrapper-two {
         width: 90%;
+    }
+    .title-block-second-page {
+        height: 45vw;
+    }
+    .title-text {
+        font-size: 5rem;
     }
 }
 
 @media only screen and (max-width: 375px) {
     /* Second page */
-    .title-block-second-page {
+    /* .title-block-second-page {
         height: 18.61vw;
-    }
+    } */
 }
 
 @media only screen and (max-width: 320px) {
     /* Second page */
     .title-block-second-page {
-        height: 21.61vw;
+        height: 55vw;
+    }
+    .title-text {
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+    .name-block h3 {
+        font-size: 1.6rem;
+        line-height: 1.9rem;
     }
 }
 
 @media only screen and (max-width: 270px) {
     /* Second page */
-    .title-block-second-page {
+    /* .title-block-second-page {
         height: 35.61vw;
-    }
+    } */
 }
 
 @media only screen and (max-width: 343px) {

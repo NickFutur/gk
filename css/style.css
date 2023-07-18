@@ -653,10 +653,10 @@ span {
 }
 
 .title-wrap {
+    position: absolute;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
 }
 
 .name-block {
@@ -664,16 +664,24 @@ span {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 70%;
     height: 100%;
+    background-color: #fff;
+    clip-path: polygon(0 0, 97% 0, 85% 630%, 0% 100%);
+    margin-top: 1%;
+}
+
+.name-block h3 {
+    color: #000;
+    padding-right: 4%;
 }
 
 .title-text {
     font-family: 'Noto Serif', serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 4.8rem;
-    line-height: 6.5rem;
+    font-size: 9rem;
+    line-height: 12rem;
 }
 
 .title-desc {
@@ -797,19 +805,80 @@ span {
     margin-bottom: 10%;
 }
 
+
+/* .project-block_link {
+    font-weight: 700;
+    font-size: 2.0rem;
+    line-height: 2.4rem;
+    color: #FF0000;
+    text-decoration: none;
+    border: 2px solid #FF0000;
+    border-radius: 30px;
+    padding: 10px;
+} */
+
+
+/* .project-block_link:hover,
+.project-block_link:focus,
+.project-block_link:active {
+    color: #467786;
+    border: 2px solid #467786;
+} */
+
 .project-block_link {
     font-weight: 700;
     font-size: 2.0rem;
     line-height: 2.4rem;
     color: #FF0000;
     text-decoration: none;
+    border: 2px solid #FF0000;
+    border-radius: 30px;
+    padding: 10px;
+    background-image: linear-gradient(to right, #467786, #467786);
+    /* Параметры градиента */
+    background-repeat: no-repeat;
+    /* Фон не повторяется */
+    background-size: 0 100%;
+    /* Градиент пока не показываем */
+    transition: 0.3s;
+    /* Время перехода */
 }
 
 .project-block_link:hover,
 .project-block_link:focus,
 .project-block_link:active {
-    border-bottom: 2px #FF0000 solid;
+    background-size: 100% 100%;
+    color: #000000;
+    border: 2px solid #467786;
+    /* Отображаем градиент */
 }
+
+
+/* .project-block_link {
+    animation: project-block_link 1s linear infinite;
+    animation-delay: 1s;
+    transition: all 1s ease;
+}
+
+@keyframes project-block_link {
+    0% {
+        color: #467786;
+        border: 1px solid #467786;
+    }
+    10%,
+    90% {
+        color: #223d46;
+        border: 1px solid #223d46;
+    }
+    50% {
+        color: #223d46;
+        border: 1px solid #223d46;
+    }
+    100% {
+        color: #467786;
+        border: 1px solid #467786;
+    }
+} */
 
 
 /* contacts */
